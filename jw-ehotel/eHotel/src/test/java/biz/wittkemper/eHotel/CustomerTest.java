@@ -1,5 +1,6 @@
 package biz.wittkemper.eHotel;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import biz.wittkemper.eHotel.data.repository.CustomerRepo;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:WEB-INF/applicationContext.xml" })
+@Ignore
 public class CustomerTest {
 
 	@Autowired

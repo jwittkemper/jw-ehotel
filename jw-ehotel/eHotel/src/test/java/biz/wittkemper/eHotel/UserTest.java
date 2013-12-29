@@ -21,19 +21,21 @@ public class UserTest {
 	@Test
 	public void TestCreateUser() {
 		User user = new User();
-		user.setName("Hallo");
-		user.setVorname("Hallo");
-		user.setPassword("xyz123");
-		user.setUsername("anna123");
+		user.setName("Wittkemper");
+		user.setVorname("Jörg");
+		user.setPassword("joerg");
+		user.setUsername("jerry");
 
 		hotelUserRepo.save(user);
-
 	}
 
 	@Test
 	public void checkUserExist() {
-		User user = hotelUserRepo.findByUsernameAndPassword(
-				"anna123", "xyz123");
+		User user = hotelUserRepo
+				.findByUsernameAndPassword("anna123", "xyz123");
+		Assert.assertNotNull(user);
+
+		user = hotelUserRepo.findByUsernameAndPassword("jerry", "joerg");
 		Assert.assertNotNull(user);
 	}
 

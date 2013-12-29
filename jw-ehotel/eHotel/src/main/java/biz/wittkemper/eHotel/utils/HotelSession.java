@@ -6,12 +6,15 @@ import org.apache.wicket.injection.Injector;
 import org.apache.wicket.request.Request;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
+import biz.wittkemper.eHotel.data.entity.User;
 import biz.wittkemper.eHotel.data.repository.UserRepo;
 
 public class HotelSession extends AuthenticatedWebSession {
 
 	@SpringBean
 	private UserRepo repo;
+
+	private User user;
 
 	private static final long serialVersionUID = -5029818572246918306L;
 
@@ -23,10 +26,10 @@ public class HotelSession extends AuthenticatedWebSession {
 
 	@Override
 	public boolean authenticate(final String username, final String password) {
-		final String WICKET = "wicket";
 
-		// Check username and password
-		return WICKET.equals(username) && WICKET.equals(password);
+		user = repo.findByUsernameAndPassword(username, password);
+
+		return user != null;
 	}
 
 	/**
