@@ -2,11 +2,15 @@ package biz.wittkemper.eHotel;
 
 import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-/**
- * Simple test using the WicketTester
- */
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = { "classpath:WEB-INF/applicationContext.xml" })
+@Ignore
 public class TestHomePage {
 	private WicketTester tester;
 
