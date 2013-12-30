@@ -1,10 +1,7 @@
-package biz.wittkemper.eHotel;
+package biz.wittkemper.eHotel.utils.pages;
 
 import org.apache.wicket.authroles.authorization.strategies.role.annotations.AuthorizeInstantiation;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
-
-import biz.wittkemper.eHotel.utils.BasePage;
-import biz.wittkemper.eHotel.utils.SignOut;
 
 @AuthorizeInstantiation("ADMIN")
 public class HotelMainPage extends BasePage {

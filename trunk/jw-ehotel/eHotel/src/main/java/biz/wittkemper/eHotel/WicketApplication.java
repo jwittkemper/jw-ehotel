@@ -8,9 +8,11 @@ import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.request.Request;
 import org.apache.wicket.request.Response;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
+import org.springframework.stereotype.Component;
 
 import biz.wittkemper.eHotel.utils.HotelSession;
-import biz.wittkemper.eHotel.utils.SignIn;
+import biz.wittkemper.eHotel.utils.pages.HotelMainPage;
+import biz.wittkemper.eHotel.utils.pages.SignIn;
 
 /**
  * Application object for your web application. If you want to run this
@@ -18,6 +20,7 @@ import biz.wittkemper.eHotel.utils.SignIn;
  * 
  * @see biz.wittkemper.eHotel.Start#main(String[])
  */
+@Component
 public class WicketApplication extends AuthenticatedWebApplication {
 
 	@Override
