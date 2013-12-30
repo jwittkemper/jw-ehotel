@@ -7,17 +7,7 @@
 </head>
 <body>
 
-	<div class="header-wrapper">
-		<div class="header pagewidth">
-			<!-- TITLE -->
-			<h1>
-				<a href="#"><wicket:message key="applicationName" /></a>
-			</h1>
-			<h2>
-				<wicket:message key="applicationHeader" />
-			</h2>
-			<!-- END TITLE -->
-		</div>
+	<div wicket:id="header" class="header-wrapper">
 	</div>
 
 	<div class="nav-wrapper-outside">
@@ -84,15 +74,7 @@
 		</div>
 		<div class="footer-wrapper-outside">
 			<div class="footer-wrapper">
-				<div class="footer">
-					<p>
-						<a href="http://validator.w3.org/check/referer"
-							title="valid XHTML">XHTML</a> | <a
-							href="http://jigsaw.w3.org/css-validator/check/referer"
-							title="valid CSS">CSS</a> &nbsp;&nbsp; &copy; YourWebsiteName.
-						Design: <a href="http://www.spyka.net">spyka webmaster</a> | <a
-							href="http://www.justfreetemplates.com">Free Web Templates</a>
-					</p>
+				<div wicket:id="footer" class="footer">
 				</div>
 			</div>
 		</div>
