@@ -77,7 +77,6 @@ public class TestHomePage {
 		formTester.setValue("password", "joerg");
 		formTester.submit();
 		tester.assertRenderedPage(HotelMainPage.class);
-
 	}
 
 }
