@@ -1,12 +1,11 @@
-package biz.wittkemper.eHotel.utils;
+package biz.wittkemper.eHotel.utils.pages;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
-import biz.wittkemper.eHotel.Footer;
-import biz.wittkemper.eHotel.Header;
-import biz.wittkemper.eHotel.HotelMainPage;
+import biz.wittkemper.eHotel.utils.components.Footer;
+import biz.wittkemper.eHotel.utils.components.Header;
 
 public class SignOut extends WebPage {
 

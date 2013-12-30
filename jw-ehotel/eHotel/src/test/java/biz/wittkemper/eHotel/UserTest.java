@@ -31,11 +31,8 @@ public class UserTest {
 
 	@Test
 	public void checkUserExist() {
-		User user = hotelUserRepo
-				.findByUsernameAndPassword("anna123", "xyz123");
-		Assert.assertNotNull(user);
 
-		user = hotelUserRepo.findByUsernameAndPassword("jerry", "joerg");
+		User user = hotelUserRepo.findByUsernameAndPassword("jerry", "joerg");
 		Assert.assertNotNull(user);
 	}
 

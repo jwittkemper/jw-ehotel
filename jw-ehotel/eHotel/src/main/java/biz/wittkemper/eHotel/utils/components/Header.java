@@ -1,4 +1,4 @@
-package biz.wittkemper.eHotel;
+package biz.wittkemper.eHotel.utils.components;
 
 import org.apache.wicket.markup.html.panel.Panel;
 
