@@ -13,8 +13,8 @@ public class SignOut extends WebPage {
 
 	public SignOut(final PageParameters parameters) {
 		add(new Header("header"));
-		getSession().invalidate();
 		add(new BookmarkablePageLink("page1Link", HotelMainPage.class));
 		add(new Footer("footer"));
+		// getSession().invalidate();
 	}
 }
