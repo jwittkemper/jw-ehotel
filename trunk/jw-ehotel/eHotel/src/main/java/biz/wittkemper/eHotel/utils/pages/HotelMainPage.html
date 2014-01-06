@@ -1,21 +1,87 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
-
+<!DOCTYPE html>
+<html wicket:id="html-tag" xmlns:wicket="http://wicket.apache.org">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="styles.css" type="text/css" />
-<title>eHotel</title>
+<title>Bootstrap 101 Template</title>
+<meta wicket:id="viewport">
+<style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #2fcc87;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 680px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+    </style>
 </head>
 <body>
-<div class="content">
-    <!-- CONTENT -->
-      <wicket:extend>
-		<h3>Test 123</h3> 
-		<p></p>
-		<a wicket:id="page1Link">LogOut</a>
-		</wicket:extend>
+	<h1>Hello, world!</h1>
+	<div id="wrap">
+
+		<div class="container">
+			<div class="page-header">
+				<h1>Sticky footer</h1>
+			</div>
+			<p class="lead">Pin a fixed-height footer to the bottom of the
+				viewport in desktop browsers with this custom HTML and CSS.</p>
+			<p>
+				Use <a href="./sticky-footer-navbar.html">the sticky footer</a> with
+				a fixed navbar if need be, too.
+			</p>
+		</div>
+
+		<div id="push"></div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<p class="muted credit">
+				design by <a href="http://www.wittkemper.biz">Jörg Wittkemper</a>
+			</p>
+		</div>
 	</div>
 </body>
 </html>
