@@ -1,6 +1,5 @@
 package biz.wittkemper.eHotel;
 
-import org.apache.wicket.Application;
 import org.apache.wicket.Page;
 import org.apache.wicket.Session;
 import org.apache.wicket.authroles.authentication.AbstractAuthenticatedWebSession;
@@ -14,8 +13,6 @@ import org.springframework.stereotype.Component;
 import biz.wittkemper.eHotel.utils.HotelSession;
 import biz.wittkemper.eHotel.utils.pages.HotelMainPage;
 import biz.wittkemper.eHotel.utils.pages.SignIn;
-import de.agilecoders.wicket.core.Bootstrap;
-import de.agilecoders.wicket.core.settings.BootstrapSettings;
 
 /**
  * Application object for your web application. If you want to run this
@@ -46,7 +43,7 @@ public class WicketApplication extends AuthenticatedWebApplication {
 	@Override
 	protected void init() {
 		super.init();
-		Bootstrap.install(Application.get(), new BootstrapSettings());
+		// Bootstrap.install(Application.get(), new BootstrapSettings());
 		getDebugSettings().setDevelopmentUtilitiesEnabled(true);
 		getComponentInstantiationListeners().add(
 				new SpringComponentInjector(this));
