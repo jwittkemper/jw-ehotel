@@ -56,6 +56,7 @@
 			<artifactId>wicket-spring</artifactId>
 			<version>${wicket.version}</version>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>de.agilecoders.wicket</groupId>
 			<artifactId>wicket-bootstrap-core</artifactId>
@@ -71,7 +72,7 @@
 			<artifactId>wicket-bootstrap-themes</artifactId>
 			<version>${de.agilecoders.wicket.version}</version>
 		</dependency>
-
+ -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
