@@ -43,3 +43,8 @@ body {
 code {
   font-size: 80%;
 }
+
+.footerpic {
+	width: 35px;
+	height: 35px;
+}
